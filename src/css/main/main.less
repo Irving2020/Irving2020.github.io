@@ -1,0 +1,119 @@
+#card {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	color: #93979e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transition: width ease 0.5s, height ease 0.5s;
+
+	.card-inner {
+		padding: 0;
+		border: 0;
+		width: 35%;
+
+		@media screen and (max-width: 1024px) {
+			width: 45%;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 50%;
+		}
+
+		@media screen and (max-width: 540px) {
+			width: 60% !important;
+
+			header {
+				h1 {
+					font-size: 1rem !important;
+				}
+
+				h2 {
+					font-size: 0.8rem !important;
+				}
+			}
+
+			ul {
+				li {
+					font-size: 0.8rem !important;
+
+				}
+			}
+		}
+
+		@media screen and (max-width: 480px) {
+			width: 90% !important;
+		}
+
+		@media screen and (max-width: 360px) {
+			width: 100% !important;
+		}
+
+		header {
+			// border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			margin-bottom: 40px;
+
+			img {
+				border: 3px solid #fff;
+				border-radius: 50%;
+				box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+				transition: 0.4s ease-in-out;
+				z-index: 2;
+				position: relative;
+			}
+
+			h1 {
+				margin: 15px 15px 0px;
+				color: #fff;
+				font-size: 2rem;
+				line-height: 1.2em;
+				font-weight: 300;
+				z-index: 2;
+				position: relative;
+			}
+
+			h2 {
+				color: #ccc;
+				letter-spacing: 3px;
+				font-size: 0.8rem;
+				font-weight: lighter;
+				z-index: 2;
+				position: relative;
+			}
+		}
+
+		ul {
+			position: relative;
+			margin: 0;
+			list-style-type: none;
+			display: inline-flex;
+			width: 100%;
+			justify-content: space-around;
+			// border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+			padding-bottom: 40px;
+
+			li {
+				z-index: 2;
+				position: relative;
+				display: inline-block;
+				transition: all 0.2s;
+				width: 100%;
+				height: 100%;
+				// border-left: solid 0.1px hsla(0, 0%, 100%, 0.1);
+				// border-right: solid 0.1px hsla(0, 0%, 100%, 0.1);
+
+				a {
+					color: #b6b6b6;
+					transition: all 0.2s;
+
+					&:hover {
+						color: #f6f6f6;
+						text-shadow: 0 0 2px #f6f6f6;
+					}
+				}
+			}
+		}
+	}
+}

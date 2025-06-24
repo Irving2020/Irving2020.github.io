@@ -1,0 +1,50 @@
+{
+	"head": {
+		"title": "IrvingMaster",
+		"description": "Author:SimonAKing,Category:Personal Blog",
+		"favicon": "favicon.ico"
+	},
+	"intro": {
+		"title": "IrvingMaster",
+		"subtitle": "Front back left right end engineer",
+		"enter": "enter",
+		"supportAuthor": true,
+		"background": true
+	},
+	"main": {
+		"name": "IrvingMaster",
+		"signature": "Code & Input & Output",
+		"avatar": {
+			"link": "assets/avatar.jpg",
+			"height": "100",
+			"width": "100"
+		},
+		"ul": {
+			"first": {
+				"href": "blog/",
+				"icon": "bokeyuan",
+				"text": "Blog"
+			},
+			"second": {
+				"href": "https://github.com/Irving2020",
+				"icon": "github",
+				"text": "Github"
+			},
+			"third": {
+				"href": "mailto:simon@tomotoes.com",
+				"icon": "email",
+				"text": "Email"
+			},
+			"fourth": {
+				"href": "loverspace/",
+				"icon": "LOVEx-copy",
+				"text": "LoverSpace"
+			},
+			"fifth": {
+				"href": "about/",
+				"icon": "xiaolian",
+				"text": "About"
+			}
+		}
+	}
+}

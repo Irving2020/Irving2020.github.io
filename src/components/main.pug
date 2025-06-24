@@ -1,0 +1,31 @@
+.content.content-main
+	#card
+		.card-inner.fade
+			header
+				img(src=`${main.avatar.link}` width=`${main.avatar.width}` height=`${main.avatar.height}` alt="avatar")
+				h1(data-translate="name") #{main.name}
+				h2#signature(data-translate="signature") #{main.signature}
+
+			- const { first , second , third, fourth } = main.ul
+			ul
+				li
+					a(href=`${first.href}` aria-label=`${first.text}`)
+						i(class=`icon icon-${first.icon}`)
+						span(data-translate=`${first.text}`) #{first.text}
+
+				li
+					a(href=`${second.href}` aria-label=`${second.text}`)
+						i(class=`icon icon-${second.icon}`)
+						span(data-translate=`${second.text}`) #{second.text}
+
+				li
+					a(href=`${third.href}` aria-label=`${third.text}` target="_blank")
+						i(class=`icon icon-${third.icon}`)
+						span(data-translate=`${third.text}`) #{third.text}
+
+				li
+					a(href=`${fourth.href}` aria-label=`${fourth.text}` target="_blank")
+						i(class=`icon icon-${fourth.icon}`)
+						span(data-translate=`${fourth.text}`) #{fourth.text}
+
+	canvas.grid-background#gridCanvas
